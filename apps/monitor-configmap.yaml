@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: monitor-config
+  namespace: kuma
+data:
+  monitor-config.yml: |
+    monitors:
+      - name: google
+        url: https://www.google.com
+        interval: 60
